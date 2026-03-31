@@ -120,4 +120,5 @@ void terminar_programa(int conexion, t_log* logger, t_config* config)
 	liberar_conexion(conexion);
 	log_destroy(logger);
 	config_destroy(config);
+	printf("Se libero la memoria ocupada!");
 }
