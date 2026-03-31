@@ -82,7 +82,7 @@ void leer_consola(t_log* logger)
 	// El resto, las vamos leyendo y logueando hasta recibir un string vacío
 	// ¡No te olvides de liberar las lineas antes de regresar!
 	while (1){
-		leido = readline("> ");
+		leido = readline("> Ingresa las lineas que quieras y se mostraran en consola. Cuando desees finalizar, ingresa un string vacio: ");
 		if (!strcmp(leido, "")){
 			break;
 		}
@@ -100,7 +100,7 @@ void paquete(int conexion)
 
 	// Leemos y esta vez agregamos las lineas al paquete
 	while (1){
-		leido = readline("> Ingresa las lineas que quieras que seincluyan en el paquete. Para finalizar, envia un string vacio");
+		leido = readline("> Ingresa las lineas que quieras que se incluyan en el paquete. Para finalizar, envia un string vacio: ");
 		if (!strcmp(leido, "")){
 			break;
 		}
